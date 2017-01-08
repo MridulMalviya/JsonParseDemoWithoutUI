@@ -74,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
     private void makeJsonObjectRequest() {
 
         showpDialog();
+        /*{
+	"name" : "Ravi Tamada",
+	"email" : "ravi8x@gmail.com",
+	"phone" : {
+		"home" : "08947 000000",
+		"mobile" : "9999999999"
+	}
+
+            }*/
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
                 urlJsonObj, new Listener<JSONObject>() {
@@ -127,7 +136,24 @@ public class MainActivity extends AppCompatActivity {
      * Method to make json array request where response starts with [
      * */
     private void makeJsonArrayRequest() {
-
+        /*[
+	{
+	"name" : "Ravi Tamada",
+	"email" : "ravi8x@gmail.com",
+	"phone" : {
+		"home" : "08947 000000",
+		"mobile" : "9999999999"
+	}
+	},
+	{
+	"name" : "Tommy",
+	"email" : "tommy@gmail.com",
+	"phone" : {
+		"home" : "08946 000000",
+		"mobile" : "0000000000"
+	}
+	}
+]*/
         showpDialog();
 
         JsonArrayRequest req = new JsonArrayRequest(urlJsonArry,
